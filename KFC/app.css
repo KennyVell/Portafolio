@@ -1,0 +1,13 @@
+body{
+    background-color: #e2e2e2;
+}
+
+footer{
+    background-color: #E5002B;
+    color: white;
+    padding: 35px;
+}
+
+.btn-danger{
+    background-color: #E5002B;
+}
