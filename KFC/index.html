@@ -11,130 +11,133 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="theme-light">
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/1200px-KFC_Logo.svg.png"
-                alt="logo" class="img-fluid">
+                    alt="logo" class="img-fluid">
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-3"></div>
         </div>
     </div>
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-                <select class="form-select">
-                    <option value="" disabled>Seleccionar idioma</option>
+                <label class="ms-2">Seleccionar tema</label>
+                <select class="form-select" id="tema" onchange="cambiarTema()">
+                    <option value="lt">Claro</option>
+                    <option value="dk">Oscuro</option>
+                    <option value="yw">Descuentos</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="ms-2">Seleccionar idioma</label>
+                <select class="form-select">                    
                     <option value="es">Español</option>
                     <option value="en">Inglés</option>
                 </select>
             </div>
-            <div class="col-md-6">
-                <select class="form-select">
-                    <option value="" disabled>Seleccionar tema</option>
-                    <option value="lt">Claro</option>
-                    <option value="dk">Oscuro</option>
-                </select>
-            </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-3">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-1.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 8.900</h5>
                         <h3>BBQ Crunch</h3>
                         <p>1 Sándwich BBQ Crunch (1 Filete de pollo apanado)</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-2.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 15.900</h5>
                         <h3>Kentucky Sandwich</h3>
                         <p>1 Kentucky hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, pepinillos,...</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-3.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 15.900</h5>
                         <h3>Combo BBQ Crunch</h3>
                         <p>1 Sándwich BBQ Crunch (1 Filete de pollo apanado) +1 Papa Pequeña +1 Gaseosa PEP...</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-4.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 16.900</h5>
                         <h3>Kentucky Coronel Sandwich</h3>
-                        <p>1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Ensalada...</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>
+                        <p>1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Ensalada...
+                        </p>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-        </div>        
-    </div>
-    <div class="container mt-5">
-        <div class="card-group row">
-            <div class="col-md-3">
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-5.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 21.900</h5>
                         <h3>Combo Kentucky Sandwich</h3>
                         <p>1 Kentucky hamburguesa /Sandwich (1 Filete de pechuga de pollo apanado, pepinillos,...</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-6.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 22.900 </h5>
                         <h3>Combo Kentucky Coronel Sandwich</h3>
-                        <p>1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Ensalada...</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>                        
+                        <p>1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Ensalada...
+                        </p>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-7.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 23.900</h5>
                         <h3>Sandwich Crispy BBQ</h3>
-                        <p>1 Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crisp...</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>
+                        <p>1 Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crisp...
+                        </p>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 card-group">
                 <div class="card">
                     <img src="images/hamburguesa-8.webp" alt="menu-1">
                     <div class="card-body">
                         <h5>$ 29.900</h5>
                         <h3>Combo Sandwich Crispy BBQ</h3>
-                        <p>1 Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crisp...</p>
-                        <button class="btn btn-danger col-md-12">Comprar</button>
+                        <p>1 Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crisp...
+                        </p>
                     </div>
+                    <button class="btn btn-danger col-md-12">Comprar</button>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
     <footer class="mt-5">
         <div class="container">

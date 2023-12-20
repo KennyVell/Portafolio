@@ -1,13 +1,86 @@
-body{
-    background-color: #e2e2e2;
+.card{
+    padding: 3%;
+}
+
+.btn{
+    border: none;
 }
 
 footer{
-    background-color: #E5002B;
-    color: white;
     padding: 35px;
 }
 
-.btn-danger{
+.theme-light{
+    background-color: #eee;
+}
+
+.theme-light footer{
     background-color: #E5002B;
+    color: white;
+}
+
+.theme-light .btn-danger{
+    background-color: #E5002B;
+    border: none;
+}
+
+.theme-light .btn-danger:hover{
+    background-color: #fff;
+    color: #E5002B;
+    outline: 2px solid #E5002B;
+    outline-offset: -2px;    
+}
+
+.theme-dark{
+    background-color: #0F0F0F   ;
+    color: #fff;
+}
+
+.theme-dark .card{
+    background-color: #475b81;
+    color: #fff;
+}
+
+.theme-dark footer{
+    background-color: #232D3F;
+    color: white;
+}
+
+.theme-dark .btn-danger{
+    background-color: #232D3F;
+    border: none;
+}
+
+.theme-dark .btn-danger:hover{
+    background-color: #fff;
+    color: #232D3F;
+    outline: 2px solid #232D3F;
+    outline-offset: -2px;    
+}
+
+.theme-free{
+    background-color: #BF3131   ;
+    color: #F3EDC8;
+}
+
+.theme-free .card{
+    background-color: #F3EDC8;
+    color: #BF3131;
+}
+
+.theme-free footer{
+    background-color: #7D0A0A;
+    color: #F3EDC8;
+}
+
+.theme-free .btn-danger{
+    background-color: #7D0A0A;
+    border: none;
+}
+
+.theme-free .btn-danger:hover{
+    background-color: #fff;
+    color: #7D0A0A;
+    outline: 2px solid #7D0A0A;
+    outline-offset: -2px;    
 }
