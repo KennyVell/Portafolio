@@ -26,6 +26,10 @@ function login(){
         parrafo.innerText = `The email address or password is incorrect. please try again!`;            
     }
 
+    if(email.value == "" && password.value == ""){
+        parrafo.innerText = `Please enter your email and password!`;
+    }
+
     personas.forEach(persona=>{
 
         if(email.value == persona.email && password.value == persona.password){
@@ -35,14 +39,7 @@ function login(){
     });
 }
 
-function signOut(){
-    location.href = "./index.html";
-    sessionStorage.clear();
-}
-
-
 document.addEventListener("keypress", (event)=>{
-
     if(event.key == "Enter"){
         login();
     }
