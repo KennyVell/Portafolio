@@ -1,7 +1,7 @@
 let personas = [
-    {nombre: 'Kenneth', email:'kenneth.geme1@gmail.com', password:'d562f44'},
-    {nombre: 'Pedro', email:'pedro10@gmail.com', password:'12345'},
-    {nombre: 'Lorena', email:'lorenaes@gmail.com', password:'aguapanela'}
+    {nombre: 'Kenneth', email:'kenneth.geme1@gmail.com', password:'d562f44',tema:'gradient-custom'},
+    {nombre: 'Pedro', email:'pedro10@gmail.com', password:'12345',tema:'gradient-custom_1'},
+    {nombre: 'Lorena', email:'lorenaes@gmail.com', password:'aguapanela',tema:'gradient-custom_2'}
 ]
 
 function login(){
@@ -34,6 +34,7 @@ function login(){
 
         if(email.value == persona.email && password.value == persona.password){
             sessionStorage.setItem('nombre',persona.nombre);
+            sessionStorage.setItem('tema',persona.tema);
             location.href = "./home.html";
         }        
     });

@@ -2,3 +2,13 @@
     /*background: #9A616D;*/    
     background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
+
+.gradient-custom_1 {
+    /*background: #9A616D;*/    
+    background: linear-gradient(to right, rgb(203, 129, 17), rgb(252, 37, 37))
+}
+
+.gradient-custom_2 {
+    /*background: #9A616D;*/    
+    background: linear-gradient(to right, rgb(203, 17, 172), rgb(252, 37, 37))
+}
